@@ -15,7 +15,7 @@ docker build -t tarea2 .
 docker run -d -p 80:80 --name tarea2-container tarea2
 ```
 
-Veras algo como esto:
+Veras algo como esto:v
 
 ```bash
 CONTAINER ID   IMAGE     COMMAND           CREATED          STATUS          PORTS                NAMES
@@ -36,7 +36,7 @@ docker ps
 
 4. Ingresar a `http://localhost:80` en tu navegador.
 
-![alt text](image.png)
+![alt text](Tarea2/image.png)
 
 5. Detener y eliminar el contenedor:
 ```docker
