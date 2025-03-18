@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #ffdc41, #ff4b2b, #1e90ff, #ff8c00);
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease infinite;
+    margin: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura que el texto dentro de la tarjeta también esté centrado */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 30%;
+
+}
+
+
+button {
+    font-size: 18px;
+}
+
+/*hacemos grande pero suavizado cuando pasamos el mouse por encima al elemento con id info*/
+#info:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    color: black;
+}
+
+/*y cuando el mouse ya no este encima del elemento con id info, regresamos a su tamaño original suavizamente*/
+#info {
+    transition: transform 0.5s;
+}
